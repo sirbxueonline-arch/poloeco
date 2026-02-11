@@ -2,53 +2,59 @@ import React from 'react';
 import Hero from '../components/home/Hero';
 import NewsEngine from '../components/home/NewsEngine';
 import MorningBrief from '../components/home/MorningBrief';
-import DebatePoll from '../components/home/DebatePoll';
-import MarketData from '../components/home/MarketData';
+import Voices from '../components/home/Voices';
+import Systems from '../components/home/Systems';
+import EssentialResources from '../components/home/EssentialResources';
+import { secondaryStory } from '../data/mockData';
 
 const Home = () => {
     return (
         <div className="home-page">
             <Hero />
 
-            <div className="container" style={{ padding: 'var(--space-xl) var(--space-md)' }}>
-                <div className="grid" style={{ gridTemplateColumns: '2fr 1fr', gap: 'var(--space-xl)' }}>
+            {/* Secondary Hero / Feature */}
+            <section className="container" style={{ padding: 'var(--space-xl) var(--space-md)', borderBottom: '1px solid var(--color-border)' }}>
+                <div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: 'var(--space-xl)', alignItems: 'center' }}>
+                    <div>
+                        <img src={secondaryStory.image} alt={secondaryStory.title} style={{ width: '100%', borderRadius: 'var(--radius-sm)' }} />
+                    </div>
+                    <div>
+                        <span style={{ color: 'var(--color-secondary)', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '1px' }}>
+                            {secondaryStory.category}
+                        </span>
+                        <h2 style={{ fontSize: '2rem', margin: 'var(--space-sm) 0' }}>{secondaryStory.title}</h2>
+                        <p style={{ fontSize: '1.1rem', color: 'var(--color-text-muted)', marginBottom: 'var(--space-md)' }}>
+                            {secondaryStory.summary}
+                        </p>
+                        <button style={{
+                            backgroundColor: 'white',
+                            border: '1px solid var(--color-black)',
+                            padding: '0.5rem 1.5rem',
+                            fontWeight: 600,
+                            cursor: 'pointer'
+                        }}>
+                            Discover More
+                        </button>
+                    </div>
+                </div>
+            </section>
 
-                    {/* Main Content Column */}
+            <Voices />
+
+            <Systems />
+
+            <section className="container" style={{ padding: 'var(--space-xl) var(--space-md)' }}>
+                <div className="grid" style={{ gridTemplateColumns: '2fr 1fr', gap: 'var(--space-xl)' }}>
                     <div className="main-feed">
                         <MorningBrief />
-
-                        <h2 style={{ borderBottom: '2px solid var(--color-black)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>
-                            Recent Analysis
-                        </h2>
-                        {/* Placeholder for a list of recent articles */}
-                        <div className="article-list">
-                            {[1, 2, 3].map(i => (
-                                <div key={i} style={{ marginBottom: '2rem', display: 'flex', gap: '1rem' }}>
-                                    <div style={{ width: '200px', height: '120px', backgroundColor: '#eee', borderRadius: '4px', flexShrink: 0 }}></div>
-                                    <div>
-                                        <span style={{ fontSize: '0.8rem', color: 'var(--color-secondary)', fontWeight: 700, textTransform: 'uppercase' }}>Fiscal Policy</span>
-                                        <h3 style={{ fontSize: '1.2rem', margin: '0.25rem 0' }}>The Debt Ceiling Debate: Structural Implications for 2025</h3>
-                                        <p style={{ fontSize: '0.95rem', color: '#555', margin: 0 }}>
-                                            Analysis of the recent congressional standoff and its long-term effects on bond markets.
-                                        </p>
-                                        <span style={{ fontSize: '0.8rem', color: '#999', marginTop: '0.5rem', display: 'block' }}>3 hours ago</span>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
                     </div>
-
-                    {/* Sidebar Column */}
-                    <aside className="sidebar">
+                    <aside>
                         <NewsEngine />
-                        <div style={{ height: 'var(--space-lg)' }}></div>
-                        <MarketData />
-                        <div style={{ height: 'var(--space-lg)' }}></div>
-                        <DebatePoll />
                     </aside>
-
                 </div>
-            </div>
+            </section>
+
+            <EssentialResources />
 
             {/* Responsive adjustments */}
             <style>{`
