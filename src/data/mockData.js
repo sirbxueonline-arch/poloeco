@@ -3,7 +3,7 @@ export const featuredStory = {
     title: "Election Impacts on Markets",
     summary: "Analyze how political elections affect financial markets and investor confidence. Historical data suggests volatility spikes in the month preceding major polls, but long-term trends often remain driven by fundamentals.",
     category: "Political Economy",
-    image: "https://images.unsplash.com/photo-1571609549239-bf07fb79f702?q=80&w=2070&auto=format&fit=crop", // Voting/Election themed
+    image: "https://images.unsplash.com/photo-1571609549239-bf07fb79f702?q=80&w=2070&auto=format&fit=crop",
     author: "Poleconomics Team",
     date: "Feb 10, 2026"
 };
@@ -13,7 +13,7 @@ export const secondaryStory = {
     title: "Economic Inequality",
     summary: "Examine the causes and effects of wealth disparity in societies. From tax policy to educational access, we deconstruct the drivers of the Gini coefficient.",
     category: "Social Economics",
-    image: "https://images.unsplash.com/photo-1605218427306-633ba87c9711?q=80&w=2069&auto=format&fit=crop", // Inequality/Urban contrast
+    image: "https://images.unsplash.com/photo-1605218427306-633ba87c9711?q=80&w=2069&auto=format&fit=crop",
     author: "Poleconomics Team",
     date: "Feb 08, 2026"
 };
@@ -76,7 +76,7 @@ export const voicesArticles = [
     {
         id: 104,
         title: "The impact of economic sanctions on Russian people",
-        summary: "According to the Council on Foreign Relations, economic sanctions are defined as the withdrawal of customary trade and financial relations. This in-depth analysis explores the human cost and political efficacy of these measures.",
+        summary: "According to the Council on Foreign Relations, 'Economic sanctions are defined as the withdrawal of customary trade and financial relations for foreign- and security-policy purposes.', economic sanctions are financial and commercial penalties applied by one or more countries against a targeted country, group, or individual. Economic sanctions are imposed with the goal to achieve foreign policy objectives and prevent conflicts from arising. Sanctions are only forced upon the aggressor if they have violated perceived international norms. They can range from embargoes to more targeted restrictions, such as trade bans, asset freezes, and travel restrictions.\n\nJoseph Nye, the former US Assistant Secretary of Defence for International Security Affairs who co-founded the theory of neoliberalism in international relations, once said that 'Power is the ability to influence the behaviour of others to get the outcomes one wants.' Power did not mean using only force, but also meant using persuasion, incentives, and specific psychological methods to change the behaviour of opposing states. So, to divide power into different categories, Joseph Nye created a diagram that illustrates a spectrum ranging from 'hard' to 'soft' methods.",
         tags: ["Geopolitics", "Sanctions"],
         author: "Irada Hasanli",
         date: "Jan 2026",
@@ -111,21 +111,21 @@ export const resources = [
         id: 301,
         title: "International Monetary Fund (IMF)",
         description: "The IMF provides a wealth of information on global economic stability, financial assistance, and policy advice. Their resources include reports, data sets, and research tools.",
-        image: "https://images.unsplash.com/photo-1580519542721-db7794aa64ac?q=80&w=2070&auto=format&fit=crop", // Money/Finance
+        image: "https://images.unsplash.com/photo-1580519542721-db7794aa64ac?q=80&w=2070&auto=format&fit=crop",
         link: "https://www.imf.org"
     },
     {
         id: 302,
         title: "The Brookings Institution",
         description: "A nonprofit public policy organization, Brookings offers in-depth research and analysis on various political and economic issues. Their publications cover a wide range of topics.",
-        image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop", // Institution building
+        image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop",
         link: "https://www.brookings.edu"
     },
     {
         id: 303,
         title: "World Bank Data",
         description: "Access a vast repository of data from the World Bank, which provides insights into global development challenges. This resource is crucial for understanding economic trends.",
-        image: "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=2070&auto=format&fit=crop", // Globe
+        image: "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=2070&auto=format&fit=crop",
         link: "https://data.worldbank.org"
     }
 ];
