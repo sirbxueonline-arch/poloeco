@@ -1,0 +1,34 @@
+:root {
+  /* Colors */
+  --color-primary: #003366; /* Deep Oxford Blue - Trust */
+  --color-secondary: #b30000; /* Editorial Red - Urgency */
+  --color-accent: #f4f6f8; /* Light gray-blue background */
+  --color-text-main: #111111;
+  --color-text-muted: #555555;
+  --color-background: #ffffff;
+  --color-border: #e0e0e0;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-serif: 'Merriweather', 'Georgia', serif;
+  --font-sans: 'Inter', 'Roboto', system-ui, sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --header-height: 70px;
+  --sidebar-width: 300px;
+
+  /* Shadows & Borders */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.04);
+  --radius-sm: 4px;
+}
