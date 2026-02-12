@@ -1,16 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Hero from '../components/home/Hero';
 import NewsEngine from '../components/home/NewsEngine';
 import MorningBrief from '../components/home/MorningBrief';
 import Voices from '../components/home/Voices';
 import Systems from '../components/home/Systems';
 import EssentialResources from '../components/home/EssentialResources';
+import ExternalNews from '../components/home/ExternalNews';
 import { secondaryStory } from '../data/mockData';
 
 const Home = () => {
     return (
         <div className="home-page">
+            <div className="container" style={{ paddingTop: 'var(--space-lg)', paddingBottom: 'var(--space-lg)' }}>
+                <div className="grid" style={{ gridTemplateColumns: '2fr 1fr', gap: 'var(--space-xl)' }}>
+                    <div className="main-feed">
+                        <MorningBrief />
+                    </div>
+                    <aside>
+                        <NewsEngine />
+                    </aside>
+                </div>
+            </div>
+
             <Hero />
+
+            <div className="container" style={{ padding: '0 var(--space-md)' }}>
+                <ExternalNews />
+            </div>
 
             {/* Secondary Hero / Feature */}
             <section className="container" style={{ padding: 'var(--space-xl) var(--space-md)', borderBottom: '1px solid var(--color-border)' }}>
@@ -26,15 +43,17 @@ const Home = () => {
                         <p style={{ fontSize: '1.1rem', color: 'var(--color-text-muted)', marginBottom: 'var(--space-md)' }}>
                             {secondaryStory.summary}
                         </p>
-                        <button style={{
-                            backgroundColor: 'white',
-                            border: '1px solid var(--color-black)',
-                            padding: '0.5rem 1.5rem',
-                            fontWeight: 600,
-                            cursor: 'pointer'
-                        }}>
-                            Discover More
-                        </button>
+                        <Link to={`/research/${secondaryStory.id}`} style={{ textDecoration: 'none' }}>
+                            <button style={{
+                                backgroundColor: 'white',
+                                border: '1px solid var(--color-black)',
+                                padding: '0.5rem 1.5rem',
+                                fontWeight: 600,
+                                cursor: 'pointer'
+                            }}>
+                                Discover More
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -42,17 +61,6 @@ const Home = () => {
             <Voices />
 
             <Systems />
-
-            <section className="container" style={{ padding: 'var(--space-xl) var(--space-md)' }}>
-                <div className="grid" style={{ gridTemplateColumns: '2fr 1fr', gap: 'var(--space-xl)' }}>
-                    <div className="main-feed">
-                        <MorningBrief />
-                    </div>
-                    <aside>
-                        <NewsEngine />
-                    </aside>
-                </div>
-            </section>
 
             <EssentialResources />
 

@@ -141,13 +141,32 @@ export const pollData = {
 
 export const researchPapers = [
     {
+        id: 'ee-irada',
+        title: "The Impact of Economic Sanctions on Russian People",
+        summary: "An in-depth analysis of how international sanctions have affected the daily lives, economy, and political landscape of Russia.",
+        tags: ["Geopolitics", "Sanctions"],
+        author: "Irada Hasanli",
+        date: "Jan 2026",
+        readTime: "20 min read",
+        image: "https://images.unsplash.com/photo-1565514020125-61266b746fb9?q=80&w=2070&auto=format&fit=crop",
+        fullText: `From the numbers given in figure 8, it can be confidently concluded that Russia's energy exports have been shifted towards Asian markets, particularly China and India as a result of Western sanctions continuing to restrict trade between Russia and Europe. In coal exports, China buys almost 46% of total exports. India follows with 17% by buying discounted Russian coal to support its growing energy demands thanks to their huge population. This shows their close economic ties with Russia for both countries. Turkey, even though accounting for only 11% is a crucial customer as they also export the Russian non-renewable resources worldwide. Similarly with crude oil, China and India together make up a huge percentage of 84% of Russian exports, purchasing 47% and India 37% respectively.
+        
+        While Asian countries take the lead in coal and crude oil purchases, Europe’s reliance on Russia for other energy forms is still visible from figure 8. The EU remains the largest buyer of Russia’s liquefied natural gas (LNG), accounting for 48% of exports, and still imports 40% of Russia’s pipeline gas. These trends demonstrate Russia’s strategic turn of energy trade towards non-Western markets, with countries like China, India, and Turkey, helping Russia’s economy survive. This independence from Western countries also shows that Russia is far better without US and European governments money thanks to the strengthened economic bonds between Asian nations and Russia.
+        
+        Conclusion
+        To conclude, economic sanctions have indeed had a huge impact on Russia’s economy. With Western countries observing the Ukrainian war unfold, more sanctions are imposed with the aim to create fluctuations in Russia’s economy. The sanctions are added with packages, targeting key sectors, such as banking, energy, and defense, and included asset freezes, trade restrictions, and prohibitions on luxury goods. The Russian ruble experienced a significant depreciation, which led to inflation, ultimately causing higher costs for everyday goods, and a decline in living standards for many citizens. Industries such as automobiles and oil refineries suffered from increased production costs and limited access to foreign markets. While these sanctions were designed to pressure the Russian government and reduce its capacity to wage war, they have also created economic instability, job losses, and social unrest for ordinary Russians.
+        
+        What’s more is that Russia’s Central Bank raising interest rates to quiet down inflation has further damaged the economy, making borrowing more expensive for both businesses and individuals. In a different perspective, western sanctions have significantly changed how Russia used to export energy. The sanctions have made Russia friendlier with non-Western countries, exposing the limitations of economic penalties. The recent shift toward Asian markets, particularly China and India, reflects Russia’s survival and adaptation skills to its current situation. The western world still depends on Russian LNG and pipeline gas, demonstrating how countries have their own interdependencies. To achieve peace in Ukraine, is to be able to effectively stop Russia from assaulting the Crimea region. This can only be achieved if the whole world agrees on cutting off Russia economically and politically, stripping them away from alternatives.`
+    },
+    {
         id: 101,
         title: "The Future of Work in a Digital Economy",
         summary: "In this contribution, a leading economist discusses the transformational changes in the workplace brought about by digital technologies.",
         tags: ["Labor Economics", "Digital Transformation"],
         author: "Leading Economist",
         date: "Feb 2026",
-        readTime: "10 min read"
+        readTime: "10 min read",
+        fullText: "Full text content for The Future of Work... (Placeholder for demo purpose as full text wasn't provided)."
     },
     {
         id: 102,
@@ -156,7 +175,8 @@ export const researchPapers = [
         tags: ["Fiscal Policy", "Crisis Management"],
         author: "Seasoned Policy Analyst",
         date: "Jan 2026",
-        readTime: "15 min read"
+        readTime: "15 min read",
+        fullText: "Full text content for Policy Responses..."
     },
     {
         id: 103,
@@ -165,6 +185,7 @@ export const researchPapers = [
         tags: ["Sustainability", "Development"],
         author: "Environmental Economist",
         date: "Jan 2026",
-        readTime: "12 min read"
+        readTime: "12 min read",
+        fullText: "Full text content for Sustainable Development..."
     }
 ];

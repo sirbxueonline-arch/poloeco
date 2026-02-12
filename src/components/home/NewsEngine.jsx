@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Clock } from 'lucide-react';
 import { newsItems } from '../../data/mockData';
 
@@ -31,7 +32,7 @@ const NewsEngine = () => {
                             </div>
                         </div>
                         <h4 style={{ fontSize: '1rem', fontFamily: 'var(--font-sans)', fontWeight: 600, margin: '0 0 0.5rem 0' }}>
-                            <a href="#" style={{ color: 'var(--color-text-main)' }}>{item.title}</a>
+                            <Link to={`/research/${item.id}`} style={{ color: 'var(--color-text-main)', textDecoration: 'none' }}>{item.title}</Link>
                         </h4>
                         <p style={{ fontSize: '0.9rem', color: '#555', margin: 0, lineHeight: 1.4 }}>
                             {item.summary}

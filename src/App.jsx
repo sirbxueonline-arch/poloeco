@@ -4,6 +4,7 @@ import Footer from './components/common/Footer';
 import Home from './pages/Home';
 import Research from './pages/Research';
 import About from './pages/About';
+import ArticleView from './pages/ArticleView';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/research" element={<Research />} />
+            <Route path="/research/:id" element={<ArticleView />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </main>
